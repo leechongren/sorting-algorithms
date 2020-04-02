@@ -4,4 +4,8 @@ describe("insertionSort", () => {
   it("should return [1] when input [1]", () => {
     expect(insertionSort([1])).toEqual([1]);
   });
+
+  it("should return [1,2] when input [2,1]", () => {
+    expect(insertionSort([2, 1])).toEqual([1, 2]);
+  });
 });
