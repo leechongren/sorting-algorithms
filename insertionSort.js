@@ -1,9 +1,11 @@
-const insertionSort = arr => {
+const insertionSort = (arr) => {
   for (let i = 0; i < arr.length; i++) {
-    if (arr[i] > arr[i + 1]) {
-      const holder = arr[i];
-      arr[i] = arr[i + 1];
-      arr[i + 1] = holder;
+    let counter = i;
+    while (arr[counter] > arr[counter + 1] && counter >= 0) {
+      const holder = arr[counter];
+      arr[counter] = arr[counter + 1];
+      arr[counter + 1] = holder;
+      counter--;
     }
   }
   return arr;
