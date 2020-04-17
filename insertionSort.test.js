@@ -20,4 +20,8 @@ describe("insertionSort", () => {
   it("should return [2,3,4,6,8] when input [4,2,3,8,6]", () => {
     expect(insertionSort([4, 2, 3, 8, 6])).toEqual([2, 3, 4, 6, 8]);
   });
+
+  it("should return [2,3,3,4,6,8] when input [4,2,3,8,6,3]", () => {
+    expect(insertionSort([4, 2, 3, 8, 6, 3])).toEqual([2, 3, 3, 4, 6, 8]);
+  });
 });
